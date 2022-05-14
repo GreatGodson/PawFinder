@@ -1,4 +1,4 @@
-# PawFinder (WIP)
+# PawFinder
 
 This project is a paw finder UI built with the flutter UI toolkit
 
