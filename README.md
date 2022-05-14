@@ -1,4 +1,4 @@
-# FinTech (WIP)
+# PawFinder (WIP)
 
 This project is a paw finder UI built with the flutter UI toolkit
 
