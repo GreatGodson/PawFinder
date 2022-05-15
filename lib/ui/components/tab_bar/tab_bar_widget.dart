@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:paw_finder/ui/themes/theme.dart';
+import 'package:paw_finder/ui/constants.dart';
 
 class TabBarWidget extends StatelessWidget {
   const TabBarWidget({
@@ -8,15 +9,16 @@ class TabBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
-      height: 50,
-      width: 330,
+      height: size.height / 20,
+      width: double.infinity,
       decoration: const BoxDecoration(
         color: whiteTheme,
       ),
       child: TabBar(
-        labelStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
-        unselectedLabelStyle: const TextStyle(fontSize: 10, color: blackTheme),
+        labelStyle: KTabBarLabelTextStyle,
+        unselectedLabelStyle: KTabBarUnselectedLabelTextStyle,
         unselectedLabelColor: blackTheme,
         indicatorColor: whiteTheme,
         labelColor: whiteTheme,
