@@ -27,7 +27,7 @@ class ProfileInformation extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 5),
-                  child: SearchButton(
+                  child: ReusableContainer(
                     borderRadius: 10,
                     borderColor: false,
                     color: brightPinkTheme,

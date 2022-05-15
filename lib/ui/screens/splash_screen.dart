@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:paw_finder/ui/components/app_bar_widget/app_bar.dart';
-import 'package:paw_finder/ui/components/search_button/search_button.dart';
 import 'package:paw_finder/ui/components/search_field_row/search_field_row.dart';
-import 'package:paw_finder/ui/components/search_textfield/search_widget.dart';
 import 'package:paw_finder/ui/components/shop_now_card/shop_now_card.dart';
 import 'package:paw_finder/ui/components/tab_bar/tab_bar_widget.dart';
-import 'package:paw_finder/ui/components/text_style/text_style.dart';
 import 'package:paw_finder/ui/screens/all_cat_view.dart';
-import 'package:paw_finder/ui/screens/category_info.dart';
-import 'package:paw_finder/ui/themes/theme.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);

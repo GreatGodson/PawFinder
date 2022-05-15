@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:paw_finder/ui/components/search_button/search_button.dart';
+import 'package:paw_finder/ui/components/Button/contact_us.dart';
+import 'package:paw_finder/ui/components/Profile/paw_owner.dart';
+import 'package:paw_finder/ui/components/paw_display/paw_display_card.dart';
+import 'package:paw_finder/ui/components/paw_display/paw_info_row.dart';
 import 'package:paw_finder/ui/components/text_style/text_style.dart';
 import 'package:paw_finder/ui/themes/theme.dart';
 
@@ -16,43 +19,8 @@ class AllCategory extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20, right: 20),
             child: Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 15),
-                  child: Container(
-                    width: double.infinity,
-                    height: size.height / 2.5,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: greyTheme,
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Image.asset(
-                          'images/paw4.png',
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    const CustomText(
-                        text: 'Maxim', color: blackTheme, fontSize: 18),
-                    SearchButton(
-                      borderRadius: 10,
-                      borderColor: false,
-                      color: brightPinkTheme,
-                      height: size.height / 35,
-                      width: size.width / 8,
-                      child: const Text(
-                        '9 km',
-                        style: TextStyle(color: whiteTheme),
-                      ),
-                    ),
-                  ],
-                ),
+                PawDisplayCard(size: size),
+                PawInfoRow(size: size),
                 Row(
                   children: const [
                     CustomText(
@@ -61,39 +29,7 @@ class AllCategory extends StatelessWidget {
                         fontSize: 12),
                   ],
                 ),
-                Padding(
-                  padding: EdgeInsets.only(
-                      top: size.height / 40, bottom: size.height / 40),
-                  child: Row(
-                    children: [
-                      CircleAvatar(
-                        backgroundColor: whiteTheme,
-                        radius: 30,
-                        child: Image.asset('images/lady2.png'),
-                      ),
-                      Padding(
-                        padding:
-                            EdgeInsets.only(left: 10, right: size.width / 2.5),
-                        child: Column(
-                          children: const [
-                            CustomText(
-                                text: 'Annabel',
-                                color: blackTheme,
-                                fontSize: 18),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 5),
-                              child: CustomText(
-                                  text: 'Amber owner',
-                                  color: blackTheme,
-                                  fontSize: 12),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const Expanded(child: Icon(Icons.menu)),
-                    ],
-                  ),
-                ),
+                PawOwnerInfo(size: size),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 10),
                   child: Row(
@@ -174,20 +110,7 @@ class AllCategory extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                      color: brightPinkTheme,
-                      borderRadius: BorderRadius.circular(10)),
-                  child: TextButton(
-                    onPressed: () {},
-                    child: CustomText(
-                      text: 'Contact Us',
-                      color: whiteTheme,
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
+                const ContactUsButton(),
               ],
             ),
           ),

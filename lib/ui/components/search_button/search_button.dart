@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:paw_finder/ui/themes/theme.dart';
 
-class SearchButton extends StatelessWidget {
-  const SearchButton({
+class ReusableContainer extends StatelessWidget {
+  const ReusableContainer({
     Key? key,
     required this.height,
     required this.width,

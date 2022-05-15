@@ -22,7 +22,7 @@ class SearchFieldRow extends StatelessWidget {
             width: size.width,
           ),
         ),
-        SearchButton(
+        ReusableContainer(
           borderRadius: 10,
           borderColor: false,
           color: brightPinkTheme,
