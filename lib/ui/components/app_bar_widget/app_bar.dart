@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:paw_finder/ui/themes/text_style/text_style.dart';
 import 'package:paw_finder/ui/themes/theme.dart';
 

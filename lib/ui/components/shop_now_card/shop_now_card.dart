@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:paw_finder/ui/themes/text_style/text_style.dart';
 import 'package:paw_finder/ui/themes/theme.dart';
 
@@ -13,7 +14,8 @@ class ShopNowCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: size.height / 5,
+      // size.height / 5
+      height: 180.h,
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
@@ -23,7 +25,7 @@ class ShopNowCard extends StatelessWidget {
         children: [
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.only(top: 10, left: 20, bottom: 10),
+              padding: EdgeInsets.only(top: 10, left: 20, bottom: 10.h),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -37,9 +39,11 @@ class ShopNowCard extends StatelessWidget {
                       color: blackTheme,
                       fontSize: 12.0),
                   const Spacer(),
+                  // size.height / 25
+                  // size.width / 4.5
                   Container(
-                    height: size.height / 25,
-                    width: size.width / 4.5,
+                    height: 30.h,
+                    width: 80.w,
                     decoration: BoxDecoration(
                         color: brightPinkTheme,
                         borderRadius: BorderRadius.circular(10)),
