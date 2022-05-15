@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paw_finder/ui/components/search_button/search_button.dart';
+import 'package:paw_finder/ui/components/reusable_container/reusable_container.dart';
 import 'package:paw_finder/ui/components/search_textfield/search_widget.dart';
 import 'package:paw_finder/ui/themes/theme.dart';
 

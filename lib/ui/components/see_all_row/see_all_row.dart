@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:paw_finder/ui/components/text_style/text_style.dart';
 import 'package:paw_finder/ui/screens/category_info.dart';
+import 'package:paw_finder/ui/themes/text_style/text_style.dart';
 import 'package:paw_finder/ui/themes/theme.dart';
 
 class SeeAllRow extends StatelessWidget {

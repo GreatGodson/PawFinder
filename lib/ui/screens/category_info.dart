@@ -3,7 +3,7 @@ import 'package:paw_finder/ui/components/Button/contact_us.dart';
 import 'package:paw_finder/ui/components/Profile/paw_owner.dart';
 import 'package:paw_finder/ui/components/paw_display/paw_display_card.dart';
 import 'package:paw_finder/ui/components/paw_display/paw_info_row.dart';
-import 'package:paw_finder/ui/components/text_style/text_style.dart';
+import 'package:paw_finder/ui/themes/text_style/text_style.dart';
 import 'package:paw_finder/ui/themes/theme.dart';
 
 class AllCategory extends StatelessWidget {

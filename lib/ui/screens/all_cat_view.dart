@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paw_finder/ui/components/profile_card/profile_card.dart';
+import 'package:paw_finder/ui/components/Profile/profile_card/profile_card.dart';
 import 'package:paw_finder/ui/components/see_all_row/see_all_row.dart';
 
 class All extends StatelessWidget {

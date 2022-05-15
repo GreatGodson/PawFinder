@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:paw_finder/ui/components/text_style/text_style.dart';
+import 'package:paw_finder/ui/themes/text_style/text_style.dart';
+
 import 'package:paw_finder/ui/themes/theme.dart';
 
 class ContactUsButton extends StatelessWidget {
@@ -14,7 +15,9 @@ class ContactUsButton extends StatelessWidget {
       decoration: BoxDecoration(
           color: brightPinkTheme, borderRadius: BorderRadius.circular(10)),
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pop(context);
+        },
         child: const CustomText(
           text: 'Contact Us',
           color: whiteTheme,
